@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florida - Contact Us</title>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      const emailCheck = () => {
+        const email = document.getElementById("email").value;
+        const emailConfirmation =
+          document.getElementById("email-confirmation").value;
+        if (email !== emailConfirmation) {
+          alert("Emails do not match.");
+        }
+      };
+    </script>
   </head>
   <body>
     <header>
@@ -26,7 +36,7 @@
           />
           <label for="message">Message:</label>
           <textarea id="message" name="message"></textarea>
-          <button>Submit</button>
+          <button onclick="emailCheck()">Submit</button>
         </form>
       </section>
       <aside>
