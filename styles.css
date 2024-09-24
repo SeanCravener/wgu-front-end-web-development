@@ -16,7 +16,7 @@ header {
 .main {
   display: flex;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
   background: #ecedee;
   border: 5px solid #31517d;
 }
@@ -93,6 +93,7 @@ a:hover {
 
 .table-container-home {
   border-top: 5px solid #31517d;
+  border-bottom: 5px solid #31517d;
   padding: 25px 0;
 }
 
@@ -161,12 +162,16 @@ button:hover {
 }
 
 .cards-container {
-  display: flex;
-  justify-content: space-between;
   margin: 20px 0;
+  height: 200px;
 }
 
-.card {
+.container:last-child {
+  flex-flow: column;
+}
+
+#card1 {
+  float: left;
   width: 45%;
   height: 175px;
   background-color: #ecedee;
@@ -174,14 +179,18 @@ button:hover {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-#card1 {
-  float: left;
+  margin-right: 40px;
 }
 
 #card2 {
+  float: left;
+  width: 45%;
+  height: 175px;
+  background-color: #ecedee;
+  border: 1px solid #31517d;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   top: 10px;
 }
